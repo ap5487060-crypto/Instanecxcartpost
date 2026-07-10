@@ -1,0 +1,69 @@
+name: Daily Affiliate Auto-Post
+
+on:
+  schedule:
+    # Runs at 9:00 AM IST every day (IST = UTC+5:30, so 3:30 AM UTC)
+    - cron: "30 3 * * *"
+  workflow_dispatch:   # allows manual run from GitHub Actions tab anytime
+
+permissions:
+  contents: write      # needed to commit bio page + data files back to repo
+
+jobs:
+  daily-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # ── 1. Checkout repo ──────────────────────────────────
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Python setup ───────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # ── 3. Install dependencies ───────────────────────────
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # ── 4. Download Poppins fonts for image generation ────
+      - name: Download Poppins fonts
+        run: |
+          mkdir -p scripts/fonts
+          # Poppins from GitHub (fontsource mirror)
+          BASE="https://raw.githubusercontent.com/google/fonts/main/ofl/poppins"
+          curl -sL "$BASE/Poppins-Regular.ttf"  -o scripts/fonts/Poppins-Regular.ttf
+          curl -sL "$BASE/Poppins-Bold.ttf"     -o scripts/fonts/Poppins-Bold.ttf
+          curl -sL "$BASE/Poppins-SemiBold.ttf" -o scripts/fonts/Poppins-SemiBold.ttf
+          echo "Fonts downloaded:"
+          ls -lh scripts/fonts/
+
+      # ── 5. Run the main pipeline ──────────────────────────
+      - name: Run Daily Pipeline
+        env:
+          EARNKARO_API_KEY:            ${{ secrets.EARNKARO_API_KEY }}
+          IMGBB_API_KEY:               ${{ secrets.IMGBB_API_KEY }}
+          IG_ACCESS_TOKEN:             ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BUSINESS_ACCOUNT_ID:      ${{ secrets.IG_BUSINESS_ACCOUNT_ID }}
+          FB_PAGE_ACCESS_TOKEN:        ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          FB_PAGE_ID:                  ${{ secrets.FB_PAGE_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_SHEET_ID:             ${{ secrets.GOOGLE_SHEET_ID }}
+        run: python scripts/main.py
+
+      # ── 6. Commit updated bio page + data back to repo ────
+      - name: Commit updated files
+        run: |
+          git config user.name  "Affiliate Bot"
+          git config user.email "bot@github.com"
+          git add docs/index.html data/posted_products.json data/results.json || true
+          git diff --cached --quiet || git commit -m "🤖 Daily update: $(date +'%d %b %Y')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

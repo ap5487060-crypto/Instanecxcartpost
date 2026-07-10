@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "youtube-comment-bot-499516",
+  "private_key_id": "2752ca31b592e37e409f4a7f4096624f85731ffd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQClQTj19XSrIxhb\nZgdtf52jm4q1GhNZjUm6+2yPyMpLZZtCOFHglKg6JvJpPpKY/qqtgp6ou6Uwm6Ya\nQLJTEVVT1shVDfGJyIkEK1sOCEXkr9uKN3A6XUeyLrcvatHcj+IwEe5BePw1yMO6\nqZWcLDEhN4D0OLtdbgq7pdL0KGHhnbizijXPiadExdDwS0yRUP1swksg0R8opr0V\nb3ngyO6LIcVR0do4Zjt7bT09h32tULoDz8uIKYRPY5WOMqEd/9D2H5Le10Gkle1K\nD6rkWaoHqDme5l3OfBMuZyXjsbmzg9MGhdVE72gGlm/PXztRXoiTchMLUfcj2FjP\ndnzd6sPbAgMBAAECggEACerAltRy+tD7C+nmPzZEPDnAC+WZ/94Tn+92EKjgwiaO\nUZDpeCjW2AQkHv6JmjnW/aoHIgjkvTNSA/6zu0cHT/LMCEkM08ZsU1fT7O/zj2lu\nqzw8qJv8pF8OUJlAXKECPP1BrYpe14FwhLnbLklh1DFgmtQlIx9QvV/fQxZOgKIE\nNgGapxMsvb9exO1ufmjSIXZXVZhon65V6Z/uk/Rh12lWqVKiBEBdoC/UC0RSOYqZ\nTmET6n+FKcnAZaoJT1s5iELQ9TzGpusTZqXQqVwwiubsb3Hyw3/RK4iGwreCTSUj\nxjxLIDsXu1IPrt9w9wFnTPlw9/v8U374iC/7Css6/QKBgQDXpYLFOKFeQ8uSJgJC\nnXi/CXNhvkzZ/lERlgOeLt3U1DmXaUnB4SrtVpcyKYJHF0hMcqWkZ+CMky6vLnCe\nFFUXzExnZefI5VIX+2UMnqacYhlVb1zS864JvdNPEnU1X6Tcc8L0jE44o3bHJPxu\n4kVBOX548/mnjkPfokta96GktQKBgQDELbVUOvTsywxR+REaoFtbEYqnOsMifC1n\ni1s1HoAzQ3K+BJEsPzNskik1jriMazAZMkL+AlV5cXyWKrFX8AgL22l46k9xoglx\nzLxG7vy2DZVxlJSdLMu9umKs9DMBe5tdLDsFPiHG0PDRhy7BUDBLeR8RR4JrDDrO\nsmkrauswTwKBgQDAZWup2B+owaXTa9PiaSp8jssBrs5UQ+FCZmwt6jSCmSIU45wp\nvWIWRIY6++u+z5fylOsSJpeh9ALXywAxGYTd6alVKwdEJs06llGOk9GkfqWJowTX\nNQ/WoyTvTFGEYCPvh9ytYKy9PaJQhMAvkfMmAUzETzAzfOszkFHZBEyUbQKBgQC1\n6wD8g9N+Beh9125B97PfpkuiOb6cKvTb0QGaJ5eQchpkFM4ebtkb9AnczWVbaUZo\nBxDShY2HmXKDukFMH50GicerxfQ3lqAVdFqfmJylocEUW0jY26JvZPh+E9F8rYfs\nBckRWoVt3XGDi00THG48fqwNlPdely+tXwphpbtExwKBgGOftbO3h2qoahHBjTKi\nTvFlyme9o3KMl9vWEarQ6q93BPGZbWra/Ecg4fJBByXBi7A9BkT0323A+AA1ruTn\nItnb6G6k44Y/MvF4v31A4xUkQSJpMX82udSzXSDCx9mhfzaLu+SgOOKA+v+3Bj+J\nCpmlsZ0aJGNlv0aFR1Q0kOCC\n-----END PRIVATE KEY-----\n",
+  "client_email": "drive-automation@youtube-comment-bot-499516.iam.gserviceaccount.com",
+  "client_id": "116063927284856912880",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/drive-automation%40youtube-comment-bot-499516.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
