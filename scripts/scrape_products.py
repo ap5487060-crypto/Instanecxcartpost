@@ -62,8 +62,12 @@ def save_posted_history(history):
 def clean_price(text):
     if not text:
         return None
-    digits = re.sub(r"[^\d]", "", text)
-    return int(digits) if digits else None
+    # Remove everything except digits and decimal point
+    cleaned = re.sub(r"[^\d.]", "", text)
+    try:
+        return int(float(cleaned))  # 649.00 → 649, 50000.00 → 50000
+    except Exception:
+        return None
 
 
 def scrape_category(name, url, color, limit=3):
