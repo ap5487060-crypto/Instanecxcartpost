@@ -878,5 +878,60 @@
         "affiliate_link": "https://bitli.in/3tkbyTh"
       }
     ]
+  },
+  {
+    "date": "2026-07-22 06:25",
+    "total_attempted": 8,
+    "total_posted": 8,
+    "products": [
+      {
+        "title": "NCERT",
+        "category": "Books",
+        "price": 190,
+        "affiliate_link": "https://bitli.in/t7kpFN8"
+      },
+      {
+        "title": "Portronics Konnect X 60W Type C to Type C Unbreakable Nylon Braided Cable, 2M Fast Charging Cable for iPhone 15 series, ",
+        "category": "Mobiles",
+        "price": 179,
+        "affiliate_link": "https://bitli.in/vACb0LV"
+      },
+      {
+        "title": "TREND N ART Balloon Arch Strip Birthday Decoration Items Kit Balloon Decoration Strip Kit for Garland Balloon Tape Strip",
+        "category": "Home & Kitchen",
+        "price": null,
+        "affiliate_link": "https://bitli.in/4pFr5Lr"
+      },
+      {
+        "title": "Yonex Mavis 350 Green Cap Nylon Shuttlecock (Yellow)",
+        "category": "Sports & Fitness",
+        "price": 1179,
+        "affiliate_link": "https://bitli.in/MTDnw83"
+      },
+      {
+        "title": "KLOSIA Women's Rayon Printed Anarkali Kurta and Pant with Dupatta Set",
+        "category": "Fashion",
+        "price": 799,
+        "affiliate_link": "https://bitli.in/g0mjFUK"
+      },
+      {
+        "title": "Pikkme Flip Cover Leather Finish | Inside TPU with Card Pockets | Wallet Stand and Shock Proof | Complete Protection Fli",
+        "category": "Electronics",
+        "price": 199,
+        "affiliate_link": "https://bitli.in/8a3L0e4"
+      },
+      {
+        "title": "WishCare Multi Peptide Anti Hairfall Shampoo - Rice Water, Rosemary, Capilia Longa, HA & Caffeine 20ml",
+        "category": "Beauty",
+        "price": 99,
+        "affiliate_link": "https://bitli.in/iR4cVvZ"
+      },
+      {
+        "title": "Lifelong Trike Cycle for 2-5 Years - Tricycles for Boy & Girl - Baby Cycle for Kids with 3 EVA Wheels, Bell & Basket -Du",
+        "category": "Toys & Baby",
+        "price": 1649,
+        "affiliate_link": "https://bitli.in/zBioeMo"
+      }
+    ]
   }
 ]
